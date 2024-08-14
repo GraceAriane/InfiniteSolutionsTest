@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Neometric', sans-serif;*/
+    font-family: 'Neometric Alt', sans-serif;
+    font-style: normal;
+    background-color: #f8f5f5;
+}
+
+/*Partie du header*/
+
+header{
+    background-color: #f6f6f6;
+    display: flex;
+    height: 91px;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img{
+    width: 80.76px;
+    height: 33.63px;
+    margin-left: -10px;
+}
+
+header nav{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header a{
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 23.12px;
+}
+header nav a{
+    color: #000;
+    font-weight: 400;
+    padding: 16.67px 0px;
+    transition: 0.3s ease-out;
+}
+header nav a:hover{
+    color: #05A52E;
+    border-bottom: solid 2px #05A52E;
+}
+
+header .contact{
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #f2f2f2;
+    background-color: #05972A;
+}
+
+
+/*partie du main*/
+main{
+    width: 70%;
+    margin: auto;
+}
+    /*------------------------premiere section--------------------------*/
+main .inf-title{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    /*flex-wrap: wrap;*/
+    
+}
+main .inf-title h1{
+    font-size: 100px;
+    color: #0210334A;
+    line-height: 113.52px;
+}
+main .inf-title img{
+    height: 20px;
+    margin-top: 18%;
+}
+main .inf-title p{
+    margin-top: 14.8%;
+    height: 69px;
+    font-size: 20px;
+    line-height: 23.29px;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 2.2px;
+}
+
+    /*------------------------deuxieme section--------------------------*/
+
+main .inf-options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    text-align: justify;
+    margin: 70px 0px 100px;
+}
+
+main .inf-options div{
+    width: 400px;
+    height: 297px;
+    background-color: #FEFCFC;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+main .inf-options img{
+    width: 46px;
+    margin: 20px 0px 0px 20px;
+}
+main .inf-options p{
+    line-height: 20px;
+    padding-bottom: 10px;
+
+}
+
+main .inf-options a{
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: 400;
+    color: #f2f2f2;
+    background-color: #27AE60;
+    width: 125px;
+    padding: 14px 20px 14px 20px;
+    gap: 10px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*partie du footer*/
+footer{
+    background: #021033;
+}
+footer .frame{
+    width: 100%;
+}
+footer .inf-column .first div, .first .inf-des{
+    border: solid red 1px;
+}
+footer .inf-column{
+    width: 72.96%;
+    margin:  auto;
+    
+}
+footer .first{
+    height: 400px;
+    border: solid red 1px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .first .inf-des{
+    width: 350px;
+}
+
+footer .inf-assistance{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sec{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    border-top: solid 2px #08256B;
+    color: #F2F2F280;
+    font-weight: 400;
+}
