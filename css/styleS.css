@@ -1,10 +1,13 @@
 body{
     margin: 0;
     padding: 0;
-    /*font-family: 'Neometric', sans-serif;*/
     font-family: 'Neometric Alt', sans-serif;
     font-style: normal;
     background-color: #f8f5f5;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-size: 16px;
 }
 
 /*Partie du header*/
@@ -12,22 +15,26 @@ body{
 header{
     background-color: #f6f6f6;
     display: flex;
+    position: relative;
+    width: 100%;
     height: 91px;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 header img{
-    width: 80.76px;
-    height: 33.63px;
     margin-left: -10px;
 }
 
 header nav{
-    width: 700px;
+    position: relative;
+    height: 100%;
+    width: 50%;
+    max-width: 700px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 header a{
@@ -51,25 +58,32 @@ header .contact{
     border-radius: 4px;
     font-weight: 600;
     color: #f2f2f2;
-    background-color: #05972A;
+    background: linear-gradient(to right , #05A52E 50% , #fff 50%);
+    background-size: 200%;
+    background-position: 0%;
+    transition: all .4s ease-out;
 }
 
+header .contact:hover{
+    background-position: 100%;
+    color: #05A52E;
+    border: 1px solid #05A52E
+}
 
 /*partie du main*/
 main{
     width: 70%;
+    max-width: 1024px;
     margin: auto;
 }
     /*------------------------premiere section--------------------------*/
 main .inf-title{
     display: flex;
     align-items: center;
-    gap: 13px;
-    /*flex-wrap: wrap;*/
-    
+    gap: 13px;    
 }
 main .inf-title h1{
-    font-size: 100px;
+    font-size: 6.25rem;
     color: #0210334A;
     line-height: 113.52px;
 }
@@ -112,7 +126,6 @@ main .inf-options img{
 main .inf-options p{
     line-height: 20px;
     padding-bottom: 10px;
-
 }
 
 main .inf-options a{
@@ -133,18 +146,21 @@ main .inf-options a{
 /*partie du footer*/
 footer{
     background: #021033;
+    
+
 }
 footer .frame{
-    width: 100%;
+   width: 100%;
+   background-size: cover;
 }
 footer .inf-column{
     width: 82%;
     margin:  auto;
     padding-top: 5%;
+    max-width: 82%;
 }
 footer .first{
     display: flex;
-    align-items: flex-start;
     flex-wrap: wrap;
     gap: 70px;
     margin-bottom: 15%;
